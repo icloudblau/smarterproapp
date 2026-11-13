@@ -70,13 +70,148 @@ header{position:fixed;top:0;width:100%;background:rgba(8,11,17,.95);backdrop-fil
 .faq-question{padding:1.2rem 1.5rem;width:100%;background:none;border:0;color:var(--text-main);text-align:left;font-size:1.05rem;font-weight:600;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
 .faq-question i{color:var(--accent-cyan);transition:transform .3s}.faq-answer{padding:0 1.5rem;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;color:var(--text-muted);font-size:.95rem}
 .faq-item.active .faq-question i{transform:rotate(180deg)}.faq-item.active .faq-answer{padding:0 1.5rem 1.2rem;max-height:220px}
-.contact-section{max-width:800px;padding:60px 1.5rem}.contact-container{background:var(--bg-card);padding:2rem 1.5rem;border-radius:15px;border:1px solid var(--border-glow)}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}.form-group{display:flex;flex-direction:column}.form-group.full-width{grid-column:span 2}
-.form-group label{margin-bottom:.5rem;color:var(--text-muted);font-size:.9rem}
-.form-group input,.form-select,.form-group textarea{padding:.8rem 1rem;background:var(--bg-main);border:1px solid var(--border-glow);border-radius:8px;color:var(--text-main);font-size:1rem;outline:0;width:100%}
-.form-group textarea{resize:vertical;min-height:120px}.form-group input:focus,.form-select:focus,.form-group textarea:focus{border-color:var(--accent-cyan)}
-.phone-input-group{display:flex;gap:.5rem}.phone-code-select{width:110px;flex-shrink:0}
-.phone-input-group{display:flex;gap:.5rem}.phone-code-select{width:110px;flex-shrink:0}
+/* CONTACT SECTION */
+.contact-section {
+    max-width: 800px;
+    width: 100%;
+    padding: 60px 15px;
+    margin: 0 auto;
+}
+
+.contact-container {
+    background: var(--bg-card);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid var(--border-glow);
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    width: 100%;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    color: var(--text-muted);
+    font-size: .95rem;
+}
+
+.form-group input,
+.form-select,
+.form-group textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 13px 14px;
+    background: var(--bg-main);
+    border: 1px solid var(--border-glow);
+    border-radius: 8px;
+    color: var(--text-main);
+    font-size: 16px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-select:focus,
+.form-group textarea:focus {
+    border-color: var(--accent-cyan);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.phone-input-group {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    gap: 8px;
+}
+
+.phone-code-select {
+    flex: 0 0 85px;
+    width: 85px;
+    min-width: 0;
+}
+
+.phone-input-group input[type="tel"] {
+    flex: 1 1 0;
+    width: 0;
+    min-width: 0;
+}
+
+#submit-button {
+    width: 100%;
+}
+
+.form-status {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    display: none;
+}
+
+.form-status.success {
+    display: block;
+    background: rgba(37,211,102,.12);
+    color: #7ff0a5;
+}
+
+.form-status.error {
+    display: block;
+    background: rgba(255,70,70,.12);
+    color: #ff9b9b;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+
+    .contact-section {
+        padding: 40px 12px;
+    }
+
+    .contact-container {
+        padding: 18px 14px;
+    }
+
+    .form-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .form-group.full-width {
+        grid-column: 1;
+    }
+
+    .phone-code-select {
+        flex-basis: 80px;
+        width: 80px;
+    }
+
+    .form-group input,
+    .form-select,
+    .form-group textarea {
+        font-size: 16px;
+    }
+}
 .form-status{margin-top:1rem;padding:.8rem;border-radius:8px;display:none}.form-status.success{display:block;background:rgba(37,211,102,.12);color:#7ff0a5}.form-status.error{display:block;background:rgba(255,70,70,.12);color:#ff9b9b}
 .whatsapp-float{position:fixed;bottom:25px;right:25px;background:#25d366;color:#fff;width:55px;height:55px;border-radius:50%;text-align:center;font-size:28px;box-shadow:0 0 15px rgba(37,211,102,.5);z-index:1000;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:transform .3s}
 .whatsapp-float:hover{transform:scale(1.1)}

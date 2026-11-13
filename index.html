@@ -1,4 +1,9 @@
- content="b0rH4Gzak-02UNSyxMxFVHwMs3AKzpexNMN6uFgeoN0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="b0rH4Gzak-02UNSyxMxFVHwMs3AKzpexNMN6uFgeoN0">
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 <link rel="icon" type="image/jpeg" href="assets/smarterproapp-logo.jpg">
 <link rel="apple-touch-icon" href="assets/smarterproapp-logo.jpg">
@@ -70,148 +75,12 @@ header{position:fixed;top:0;width:100%;background:rgba(8,11,17,.95);backdrop-fil
 .faq-question{padding:1.2rem 1.5rem;width:100%;background:none;border:0;color:var(--text-main);text-align:left;font-size:1.05rem;font-weight:600;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
 .faq-question i{color:var(--accent-cyan);transition:transform .3s}.faq-answer{padding:0 1.5rem;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;color:var(--text-muted);font-size:.95rem}
 .faq-item.active .faq-question i{transform:rotate(180deg)}.faq-item.active .faq-answer{padding:0 1.5rem 1.2rem;max-height:220px}
-/* CONTACT SECTION */
-.contact-section {
-    max-width: 800px;
-    width: 100%;
-    padding: 60px 15px;
-    margin: 0 auto;
-}
-
-.contact-container {
-    background: var(--bg-card);
-    padding: 25px;
-    border-radius: 15px;
-    border: 1px solid var(--border-glow);
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.form-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-    width: 100%;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    width: 100%;
-}
-
-.form-group.full-width {
-    grid-column: 1 / -1;
-}
-
-.form-group label {
-    margin-bottom: 8px;
-    color: var(--text-muted);
-    font-size: .95rem;
-}
-
-.form-group input,
-.form-select,
-.form-group textarea {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    padding: 13px 14px;
-    background: var(--bg-main);
-    border: 1px solid var(--border-glow);
-    border-radius: 8px;
-    color: var(--text-main);
-    font-size: 16px;
-    outline: none;
-}
-
-.form-group input:focus,
-.form-select:focus,
-.form-group textarea:focus {
-    border-color: var(--accent-cyan);
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 130px;
-}
-
-.phone-input-group {
-    display: flex;
-    width: 100%;
-    min-width: 0;
-    gap: 8px;
-}
-
-.phone-code-select {
-    flex: 0 0 85px;
-    width: 85px;
-    min-width: 0;
-}
-
-.phone-input-group input[type="tel"] {
-    flex: 1 1 0;
-    width: 0;
-    min-width: 0;
-}
-
-#submit-button {
-    width: 100%;
-}
-
-.form-status {
-    margin-top: 15px;
-    padding: 12px;
-    border-radius: 8px;
-    display: none;
-}
-
-.form-status.success {
-    display: block;
-    background: rgba(37,211,102,.12);
-    color: #7ff0a5;
-}
-
-.form-status.error {
-    display: block;
-    background: rgba(255,70,70,.12);
-    color: #ff9b9b;
-}
-
-/* MOBILE RESPONSIVENESS */
-@media (max-width: 768px) {
-
-    .contact-section {
-        padding: 40px 12px;
-    }
-
-    .contact-container {
-        padding: 18px 14px;
-    }
-
-    .form-grid {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 16px;
-    }
-
-    .form-group.full-width {
-        grid-column: 1;
-    }
-
-    .phone-code-select {
-        flex-basis: 80px;
-        width: 80px;
-    }
-
-    .form-group input,
-    .form-select,
-    .form-group textarea {
-        font-size: 16px;
-    }
-}
+.contact-section{max-width:800px;padding:60px 1.5rem}.contact-container{background:var(--bg-card);padding:2rem 1.5rem;border-radius:15px;border:1px solid var(--border-glow)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}.form-group{display:flex;flex-direction:column}.form-group.full-width{grid-column:span 2}
+.form-group label{margin-bottom:.5rem;color:var(--text-muted);font-size:.9rem}
+.form-group input,.form-select,.form-group textarea{padding:.8rem 1rem;background:var(--bg-main);border:1px solid var(--border-glow);border-radius:8px;color:var(--text-main);font-size:1rem;outline:0;width:100%}
+.form-group textarea{resize:vertical;min-height:120px}.form-group input:focus,.form-select:focus,.form-group textarea:focus{border-color:var(--accent-cyan)}
+.phone-input-group{display:flex;gap:.5rem}.phone-code-select{width:110px;flex-shrink:0}
 .form-status{margin-top:1rem;padding:.8rem;border-radius:8px;display:none}.form-status.success{display:block;background:rgba(37,211,102,.12);color:#7ff0a5}.form-status.error{display:block;background:rgba(255,70,70,.12);color:#ff9b9b}
 .whatsapp-float{position:fixed;bottom:25px;right:25px;background:#25d366;color:#fff;width:55px;height:55px;border-radius:50%;text-align:center;font-size:28px;box-shadow:0 0 15px rgba(37,211,102,.5);z-index:1000;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:transform .3s}
 .whatsapp-float:hover{transform:scale(1.1)}
@@ -251,76 +120,4 @@ footer{text-align:center;padding:2rem 1rem;border-top:1px solid var(--border-glo
 <div class="trust-stats"><div class="stat-item"><h3>Customer Care</h3><p>Support assistance</p></div><div class="stat-item"><h3>Multi-Device</h3><p>Device compatibility</p></div><div class="stat-item"><h3>Smarterproapp</h3><p>Our service brand</p></div></div>
 <div class="reviews-grid">
 <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"The setup process was straightforward and customer support was helpful."</p><div class="reviewer"><div class="reviewer-avatar">M</div><div class="reviewer-info"><h4>Customer</h4><span>Customer feedback</span></div></div></div>
-<div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"I received assistance when setting up the service on my device."</p><div class="reviewer"><div class="reviewer-avatar">D</div><div class="reviewer-info"><h4>Customer</h4><span>Customer feedback</span></div></div></div>
-<div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"The trial gave me an opportunity to check compatibility before subscribing."</p><div class="reviewer"><div class="reviewer-avatar">S</div><div class="reviewer-info"><h4>Customer</h4><span>Customer feedback</span></div></div></div>
-</div></section>
-<section class="pricing" id="pricing"><h2 class="section-title">Select Your Plan</h2><div class="pricing-grid">
-<div class="price-card"><div><h3>1 Month Pass</h3><div class="price">$20</div><ul class="price-features"><li><i class="fas fa-check"></i> Available content</li><li><i class="fas fa-check"></i> Supported devices</li><li><i class="fas fa-check"></i> 1 Device Connection</li><li><i class="fas fa-check"></i> Customer Support</li></ul></div><a href="https://wa.me/2349068276419?text=Hello%20Smarterproapp%2C%20I%20want%20the%201%20Month%20Plan%20($20)" class="btn-glow" target="_blank" rel="noopener noreferrer">Subscribe Now</a></div>
-<div class="price-card"><div><h3>3 Months Pass</h3><div class="price">$30</div><ul class="price-features"><li><i class="fas fa-check"></i> Available content</li><li><i class="fas fa-check"></i> Supported devices</li><li><i class="fas fa-check"></i> 1 Device Connection</li><li><i class="fas fa-check"></i> Customer Support</li></ul></div><a href="https://wa.me/2349068276419?text=Hello%20Smarterproapp%2C%20I%20want%20the%203%20Months%20Plan%20($30)" class="btn-glow" target="_blank" rel="noopener noreferrer">Subscribe Now</a></div>
-<div class="price-card popular"><div class="badge">BEST VALUE</div><div><h3>6 Months Pass</h3><div class="price">$40</div><ul class="price-features"><li><i class="fas fa-check"></i> Available content</li><li><i class="fas fa-check"></i> Supported devices</li><li><i class="fas fa-check"></i> 1 Device Connection</li><li><i class="fas fa-check"></i> Priority Support</li></ul></div><a href="https://wa.me/2349068276419?text=Hello%20Smarterproapp%2C%20I%20want%20the%206%20Months%20Plan%20($40)" class="btn-glow" target="_blank" rel="noopener noreferrer">Subscribe Now</a></div>
-<div class="price-card"><div><h3>12 Months Pass</h3><div class="price">$60</div><ul class="price-features"><li><i class="fas fa-check"></i> Available content</li><li><i class="fas fa-check"></i> Supported devices</li><li><i class="fas fa-check"></i> 1 Device Connection</li><li><i class="fas fa-check"></i> Customer Support</li></ul></div><a href="https://wa.me/2349068276419?text=Hello%20Smarterproapp%2C%20I%20want%20the%2012%20Months%20Plan%20($60)" class="btn-glow" target="_blank" rel="noopener noreferrer">Subscribe Now</a></div>
-</div></section>
-<section class="faq-section" id="faq"><h2 class="section-title">Frequently Asked Questions</h2><div class="faq-container">
-<div class="faq-item"><button class="faq-question" type="button">What devices are supported? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Compatibility may include Smart TVs, Amazon Fire TV devices, Android devices, Apple devices, Windows, Mac and supported TV boxes. Please confirm your device before ordering.</p></div></div>
-<div class="faq-item"><button class="faq-question" type="button">How fast will I receive my activation details? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>After your request and payment are confirmed, support will contact you with the next steps.</p></div></div>
-<div class="faq-item"><button class="faq-question" type="button">What internet speed do I need? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>A stable broadband connection is recommended. The speed required depends on stream quality and the number of devices using your connection.</p></div></div>
-<div class="faq-item"><button class="faq-question" type="button">Can I use one subscription on multiple devices? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Each listed standard plan is for one active device connection. Contact support to ask about other options.</p></div></div>
-</div></section>
-<section class="contact-section" id="contact"><h2 class="section-title">Contact Us</h2><div class="contact-container">
-<form id="contact-form" action="https://formspree.io/f/mqerldow" method="POST">
-<div class="form-grid">
-<div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" required></div>
-<div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required></div>
-<div class="form-group"><label for="country">Country</label><select id="country" name="country" required class="form-select">
-<option value="" data-code="" selected disabled>Select your country</option>
-<option value="Nigeria" data-code="+234">🇳🇬 Nigeria</option><option value="United States" data-code="+1">🇺🇸 United States</option><option value="United Kingdom" data-code="+44">🇬🇧 United Kingdom</option><option value="Canada" data-code="+1">🇨🇦 Canada</option><option value="Australia" data-code="+61">🇦🇺 Australia</option><option value="Germany" data-code="+49">🇩🇪 Germany</option><option value="France" data-code="+33">🇫🇷 France</option><option value="Spain" data-code="+34">🇪🇸 Spain</option><option value="South Africa" data-code="+27">🇿🇦 South Africa</option><option value="Ghana" data-code="+233">🇬🇭 Ghana</option><option value="Other" data-code="">Other</option>
-</select></div>
-<div class="form-group"><label for="phone">WhatsApp Phone Number</label><div class="phone-input-group"><input type="text" id="phone-code" name="country_code" class="form-select phone-code-select" placeholder="+234" readonly aria-label="Country calling code"><input type="tel" id="phone" name="phone" placeholder="Your phone number" autocomplete="tel-national" required></div></div>
-<div class="form-group full-width"><label for="message">Message</label><textarea id="message" name="message" placeholder="How can we help you?" required></textarea></div>
-<div class="form-group full-width"><button id="submit-button" type="submit" class="btn-glow">Send Message</button><p id="form-status" class="form-status" role="status" aria-live="polite"></p></div>
-</div>
-<input type="hidden" name="_subject" value="New message from Smarterproapp website">
-</form></div></section>
-</main>
-<a href="https://wa.me/2349068276419?text=Hello%20Smarterproapp%2C%20I%20have%20a%20question" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-<footer><p>&copy; 2026 Smarterproapp. All rights reserved.</p></footer>
-<script>
-document.querySelectorAll('.faq-question').forEach(button=>{button.addEventListener('click',()=>button.parentElement.classList.toggle('active'));});
-const countrySelect=document.getElementById('country');
-const phoneCodeInput=document.getElementById('phone-code');
-countrySelect.addEventListener('change',function(){phoneCodeInput.value=this.options[this.selectedIndex].dataset.code||'';});
-
-const contactForm=document.getElementById('contact-form');
-const statusBox=document.getElementById('form-status');
-const submitButton=document.getElementById('submit-button');
-contactForm.addEventListener('submit',async function(event){
-  event.preventDefault();
-  if(!contactForm.reportValidity()) return;
-  statusBox.className='form-status';
-  statusBox.textContent='';
-  submitButton.disabled=true;
-  submitButton.textContent='Sending...';
-  const formData=new FormData(contactForm);
-  formData.set('phone',((phoneCodeInput.value||'')+' '+document.getElementById('phone').value).trim());
-  try{
-    const response=await fetch(contactForm.action,{method:'POST',body:formData,headers:{'Accept':'application/json'}});
-    if(response.ok){
-      statusBox.textContent='Thank you! Your message has been sent successfully. We will get back to you soon.';
-      statusBox.className='form-status success';
-      contactForm.reset();
-      phoneCodeInput.value='';
-    }else{
-      let result={};try{result=await response.json();}catch(e){}
-      throw new Error(result.errors?.map(error=>error.message).join(', ')||'The form could not be submitted. Please try again.');
-    }
-  }catch(error){
-    statusBox.textContent=error.message||'Unable to send your message right now. Please try again later.';
-    statusBox.className='form-status error';
-  }finally{
-    submitButton.disabled=false;
-    submitButton.textContent='Send Message';
-  }
-});
-</script>
-</body>
-</html>
+<div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"I received assistance when setting up

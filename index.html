@@ -1,380 +1,234 @@
-content="b0rH4Gzak-02UNSyxMxFVHwMs3AKzpexNMN6uFgeoN0">
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smarterproapp - Streaming Service</title>
+<meta name="google-site-verification" content="b0rH4Gzak-02UNSyxMxFVHwMs3AKzpexNMN6uFgeoN0">
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-
 <link rel="icon" type="image/jpeg" href="assets/smarterproapp-logo.jpg">
-
 <link rel="apple-touch-icon" href="assets/smarterproapp-logo.jpg">
-
 <meta property="og:type" content="website">
-
 <meta property="og:url" content="https://smarterpro.co/">
-
 <meta property="og:title" content="Smarterproapp - Streaming Service">
-
 <meta property="og:description" content="Explore Smarterproapp plans, features and supported devices.">
-
 <meta property="og:image" content="assets/smarterproapp-banner.jpg">
-
 <meta name="twitter:card" content="summary_large_image">
-
 <meta name="twitter:title" content="Smarterproapp - Streaming Service">
-
 <meta name="twitter:description" content="Explore Smarterproapp plans, features and supported devices.">
-
 <meta name="twitter:image" content="assets/smarterproapp-banner.jpg">
-
 <script type="application/ld+json">
-
 {
-
   "@context": "https://schema.org",
-
   "@type": "Organization",
-
   "name": "Smarterproapp",
-
   "url": "https://smarterpro.co/",
-
   "logo": "assets/smarterproapp-logo.jpg"
-
 }
-
 </script>
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 <style>
-
 :root{--bg-main:#080b11;--bg-card:#101622;--accent-cyan:#00f0ff;--accent-blue:#0072ff;--text-main:#fff;--text-muted:#a0aec0;--border-glow:rgba(0,240,255,.2)}
-
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;scroll-behavior:smooth}
-
-html,body{width:100%;max-width:100vw;overflow-x:hidden;background:var(--bg-main);color:var(--text-main);line-height:1.6}
-
-img{max-width:100%;height:auto}
-
-header{position:fixed;top:0;width:100%;background:rgba(8,11,17,.95);backdrop-filter:blur(10px);z-index:1000;border-bottom:1px solid var(--border-glow)}
-
-.nav-container{max-width:1200px;margin:auto;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;width:100%}
-
-.logo{display:flex;align-items:center;font-size:1.3rem;font-weight:700;letter-spacing:1px;text-transform:uppercase}
-
+html,body{width:100%;max-width:100%;overflow-x:hidden;background:var(--bg-main);color:var(--text-main);line-height:1.6}
+body{min-width:320px}
+img{display:block;max-width:100%;height:auto}
+a,button,input,select,textarea{-webkit-tap-highlight-color:transparent}
+header{position:fixed;top:0;left:0;width:100%;background:rgba(8,11,17,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);z-index:1000;border-bottom:1px solid var(--border-glow)}
+.nav-container{max-width:1200px;margin:auto;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;width:100%;min-width:0}
+.logo{display:flex;align-items:center;font-size:1.3rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;flex-shrink:0}
 .logo img{height:48px;width:auto;margin-right:10px;object-fit:contain}
-
 .logo span{color:var(--accent-cyan)}
-
-.nav-links{display:flex;list-style:none;gap:1.5rem;align-items:center}
-
-.nav-links a{color:var(--text-main);text-decoration:none;transition:color .3s}
-
+.nav-links{display:flex;list-style:none;gap:1.5rem;align-items:center;min-width:0}
+.nav-links a{color:var(--text-main);text-decoration:none;transition:color .3s;white-space:nowrap}
 .nav-links a:hover{color:var(--accent-cyan)}
-
 .hero{padding:120px 1.5rem 55px;text-align:center;background:radial-gradient(circle at center,rgba(0,240,255,.1),rgba(8,11,17,1) 70%);width:100%}
-
 .hero-banner{display:block;width:min(100%,1100px);height:auto;margin:0 auto 1.5rem;border-radius:14px;border:1px solid var(--border-glow);box-shadow:0 0 20px rgba(0,240,255,.18)}
-
 .hero h1{font-size:2.2rem;margin-bottom:1rem;line-height:1.2}
-
 .hero h1 span{color:var(--accent-cyan);text-shadow:0 0 10px rgba(0,240,255,.5)}
-
 .hero p{font-size:1.05rem;color:var(--text-muted);max-width:700px;margin:0 auto 2rem}
-
 .btn-glow{display:inline-block;padding:.8rem 2rem;background:linear-gradient(45deg,var(--accent-blue),var(--accent-cyan));color:#000;font-weight:700;border-radius:30px;text-decoration:none;box-shadow:0 0 15px rgba(0,240,255,.4);transition:transform .3s,box-shadow .3s;border:0;cursor:pointer;text-align:center}
-
 .btn-glow:hover{transform:translateY(-3px);box-shadow:0 0 25px rgba(0,240,255,.8)}
-
+.btn-glow:disabled{opacity:.65;cursor:not-allowed;transform:none}
 .trial-section,.features,.faq-section,.contact-section{padding:40px 1.5rem;max-width:1000px;margin:0 auto;width:100%}
-
 .trial-box{background:linear-gradient(135deg,rgba(16,22,34,.9),rgba(0,114,255,.15));border:2px solid var(--accent-cyan);border-radius:20px;padding:2.5rem 1.5rem;text-align:center;box-shadow:0 0 25px rgba(0,240,255,.15)}
-
 .trial-box h2{font-size:1.8rem;color:#fff;margin-bottom:.8rem}.trial-box h2 span{color:var(--accent-cyan)}
-
 .trial-box p{color:var(--text-muted);max-width:600px;margin:0 auto 1.5rem}
-
 .features{padding:60px 1.5rem;max-width:1200px}
-
 .section-title{text-align:center;font-size:2rem;margin-bottom:2.5rem}
-
-.features-grid,.reviews-grid,.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
-
-.feature-card{background:var(--bg-card);padding:1.8rem;border-radius:12px;border:1px solid var(--border-glow);text-align:center;transition:transform .3s}
-
+.features-grid,.reviews-grid,.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:1.5rem}
+.feature-card{background:var(--bg-card);padding:1.8rem;border-radius:12px;border:1px solid var(--border-glow);text-align:center;transition:transform .3s;min-width:0}
 .feature-card:hover{transform:translateY(-5px)}.feature-card i{font-size:2.2rem;color:var(--accent-cyan);margin-bottom:1rem}
-
 .social-proof{padding:60px 1.5rem;background:rgba(16,22,34,.3);width:100%}
-
 .trust-stats{display:flex;justify-content:center;gap:3rem;margin-bottom:3rem;flex-wrap:wrap;text-align:center}
-
 .stat-item h3{font-size:2.2rem;color:var(--accent-cyan);font-weight:700}.stat-item p{color:var(--text-muted);font-size:.95rem}
-
-.reviews-grid{max-width:1200px;margin:0 auto;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-
-.review-card{background:var(--bg-card);border:1px solid var(--border-glow);border-radius:12px;padding:1.5rem}
-
+.reviews-grid{max-width:1200px;margin:0 auto;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr))}
+.review-card{background:var(--bg-card);border:1px solid var(--border-glow);border-radius:12px;padding:1.5rem;min-width:0}
 .stars{color:#ffc107;margin-bottom:.8rem}.review-card p{font-size:.95rem;margin-bottom:1rem;font-style:italic}
-
-.reviewer{display:flex;align-items:center;gap:.8rem}.reviewer-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(45deg,var(--accent-blue),var(--accent-cyan));display:flex;align-items:center;justify-content:center;color:#000;font-weight:bold}
-
+.reviewer{display:flex;align-items:center;gap:.8rem}.reviewer-avatar{width:40px;height:40px;flex:0 0 40px;border-radius:50%;background:linear-gradient(45deg,var(--accent-blue),var(--accent-cyan));display:flex;align-items:center;justify-content:center;color:#000;font-weight:bold}
 .reviewer-info h4{font-size:.95rem}.reviewer-info span{font-size:.8rem;color:var(--text-muted)}
-
 .pricing{padding:60px 1.5rem;background:rgba(16,22,34,.5);width:100%}
-
-.pricing-grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));max-width:1200px;margin:0 auto}
-
-.price-card{background:var(--bg-card);border:1px solid var(--border-glow);border-radius:15px;padding:2rem 1.25rem;text-align:center;position:relative;display:flex;flex-direction:column;justify-content:space-between}
-
+.pricing-grid{grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));max-width:1200px;margin:0 auto}
+.price-card{background:var(--bg-card);border:1px solid var(--border-glow);border-radius:15px;padding:2rem 1.25rem;text-align:center;position:relative;display:flex;flex-direction:column;justify-content:space-between;min-width:0}
 .price-card.popular{border-color:var(--accent-cyan);box-shadow:0 0 20px rgba(0,240,255,.2)}
-
 .badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--accent-cyan);color:#000;padding:2px 12px;font-size:.8rem;font-weight:bold;border-radius:10px}
-
 .price{font-size:2.3rem;font-weight:700;color:var(--accent-cyan);margin:1rem 0}
-
 .price-features{list-style:none;margin-bottom:2rem;text-align:left}.price-features li{margin-bottom:.8rem;color:var(--text-muted);font-size:.95rem}.price-features li i{color:var(--accent-cyan);margin-right:8px}
-
 .faq-section{max-width:800px;padding:60px 1.5rem}
-
 .faq-container{display:flex;flex-direction:column;gap:1rem}.faq-item{background:var(--bg-card);border:1px solid var(--border-glow);border-radius:10px;overflow:hidden}
-
-.faq-question{padding:1.2rem 1.5rem;width:100%;background:none;border:0;color:var(--text-main);text-align:left;font-size:1.05rem;font-weight:600;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
-
-.faq-question i{color:var(--accent-cyan);transition:transform .3s}.faq-answer{padding:0 1.5rem;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;color:var(--text-muted);font-size:.95rem}
-
-.faq-item.active .faq-question i{transform:rotate(180deg)}.faq-item.active .faq-answer{padding:0 1.5rem 1.2rem;max-height:220px}
-
-.contact-section{max-width:800px;padding:60px 1.5rem}.contact-container{background:var(--bg-card);padding:2rem 1.5rem;border-radius:15px;border:1px solid var(--border-glow)}
-
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}.form-group{display:flex;flex-direction:column}.form-group.full-width{grid-column:span 2}
-
+.faq-question{padding:1.2rem 1.5rem;width:100%;background:none;border:0;color:var(--text-main);text-align:left;font-size:1.05rem;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:1rem;cursor:pointer}
+.faq-question i{color:var(--accent-cyan);transition:transform .3s;flex-shrink:0}.faq-answer{padding:0 1.5rem;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;color:var(--text-muted);font-size:.95rem}
+.faq-item.active .faq-question i{transform:rotate(180deg)}.faq-item.active .faq-answer{padding:0 1.5rem 1.2rem;max-height:300px}
+.contact-section{max-width:800px;padding:60px 1.5rem}.contact-container{background:var(--bg-card);padding:2rem 1.5rem;border-radius:15px;border:1px solid var(--border-glow);min-width:0}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem}.form-group{display:flex;flex-direction:column;min-width:0}.form-group.full-width{grid-column:1/-1}
 .form-group label{margin-bottom:.5rem;color:var(--text-muted);font-size:.9rem}
-
-.form-group input,.form-select,.form-group textarea{padding:.8rem 1rem;background:var(--bg-main);border:1px solid var(--border-glow);border-radius:8px;color:var(--text-main);font-size:1rem;outline:0;width:100%}
-
+.form-group input,.form-select,.form-group textarea{padding:.8rem 1rem;background:var(--bg-main);border:1px solid var(--border-glow);border-radius:8px;color:var(--text-main);font-size:1rem;outline:0;width:100%;min-width:0}
 .form-group textarea{resize:vertical;min-height:120px}.form-group input:focus,.form-select:focus,.form-group textarea:focus{border-color:var(--accent-cyan)}
-
-.phone-input-group{display:flex;gap:.5rem}.phone-code-select{width:110px;flex-shrink:0}
-
-.phone-input-group{display:flex;gap:.5rem}.phone-code-select{width:110px;flex-shrink:0}
-
+.phone-input-group{display:flex;gap:.5rem;min-width:0}.phone-code-select{width:110px;flex:0 0 110px}
 .form-status{margin-top:1rem;padding:.8rem;border-radius:8px;display:none}.form-status.success{display:block;background:rgba(37,211,102,.12);color:#7ff0a5}.form-status.error{display:block;background:rgba(255,70,70,.12);color:#ff9b9b}
-
 .whatsapp-float{position:fixed;bottom:25px;right:25px;background:#25d366;color:#fff;width:55px;height:55px;border-radius:50%;text-align:center;font-size:28px;box-shadow:0 0 15px rgba(37,211,102,.5);z-index:1000;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:transform .3s}
-
 .whatsapp-float:hover{transform:scale(1.1)}
-
 footer{text-align:center;padding:2rem 1rem;border-top:1px solid var(--border-glow);color:var(--text-muted);font-size:.9rem}
-
-@media(max-width:768px){.nav-container{flex-direction:column;gap:12px}.nav-links{gap:.8rem;font-size:.85rem;flex-wrap:wrap;justify-content:center}.hero{padding-top:175px}.hero h1{font-size:1.8rem}.features-grid,.pricing-grid,.reviews-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.form-group.full-width{grid-column:span 1}.trust-stats{gap:1.5rem}.logo img{height:42px}}
-
+@media(max-width:900px){
+  .nav-container{flex-direction:column;gap:8px;padding:.65rem 1rem}
+  .nav-links{width:100%;gap:1rem;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding:.2rem 0 .4rem;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .nav-links::-webkit-scrollbar{display:none}
+  .hero{padding-top:145px}
+}
+@media(max-width:768px){
+  .hero h1{font-size:1.8rem}
+  .features-grid,.pricing-grid,.reviews-grid{grid-template-columns:1fr}
+  .form-grid{grid-template-columns:minmax(0,1fr)}
+  .form-group.full-width{grid-column:1/-1}
+  .trust-stats{gap:1.5rem}
+  .logo img{height:42px}
+}
+@media(max-width:480px){
+  .nav-container{padding:.55rem .8rem}
+  .nav-links{gap:.85rem;font-size:.82rem}
+  .nav-links .btn-glow{padding:.35rem .9rem!important;font-size:.82rem!important}
+  .hero{padding:135px .9rem 40px}
+  .hero h1{font-size:clamp(1.5rem,7vw,1.8rem)}
+  .hero p{font-size:.98rem}
+  .hero-banner{border-radius:10px;margin-bottom:1.2rem}
+  .section-title{font-size:1.7rem;margin-bottom:2rem}
+  .trial-section,.features,.faq-section,.contact-section{padding-left:1rem;padding-right:1rem}
+  .trial-box{padding:2rem 1rem}
+  .trial-box h2{font-size:1.55rem}
+  .social-proof,.pricing{padding-left:1rem;padding-right:1rem}
+  .feature-card{padding:1.5rem 1.1rem}
+  .price-card{padding:1.8rem 1rem}
+  .contact-container{padding:1.4rem 1rem}
+  .phone-code-select{width:95px;flex-basis:95px}
+  .whatsapp-float{right:16px;bottom:16px;width:50px;height:50px;font-size:25px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}
 </style>
-
 </head>
-
 <body>
-
 <header>
-
 <nav class="nav-container" aria-label="Main Navigation">
-
 <div class="logo"><img src="assets/smarterproapp-logo.jpg" alt="Smarterproapp logo" width="150" height="52"><span></span></div>
-
 <ul class="nav-links">
-
 <li><a href="#trial">24h Trial ($1)</a></li><li><a href="#features">Features</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li>
-
 <li><a href="#contact" class="btn-glow" style="padding:.4rem 1.2rem;font-size:.85rem" aria-label="Contact Support"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-
 </ul>
-
 </nav>
-
 </header>
-
 <main>
-
 <section class="hero">
-
 <img src="assets/smarterproapp-banner.jpg" alt="Smarterproapp sports streaming banner" class="hero-banner" width="1425" height="513">
-
 <h1>Ultimate Entertainment, <span>Streamed Anywhere</span></h1>
-
 <p>Explore live channels, sports, movies and TV shows on your supported devices.</p>
-
 <a href="#pricing" class="btn-glow">Get Started Now</a>
-
 </section>
-
 <section class="trial-section" id="trial"><div class="trial-box">
-
 <h2>Test Our Service for <span>Only $1</span></h2>
-
 <p>Get a 24-hour trial account for just $1 to test channel quality, stability and speed on your own device before choosing a longer plan.</p>
-
 <a href="https://wa.me/2349068276419?text=Hello%20Smarterproapp%2C%20I%20would%20like%20to%20request%20the%2024-hour%20trial%20($1)" class="btn-glow" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Get 24-Hour Trial ($1)</a>
-
 </div></section>
-
 <section class="features" id="features"><h2 class="section-title">Why Choose Us</h2><div class="features-grid">
-
 <div class="feature-card"><i class="fas fa-tv" aria-hidden="true"></i><h3>Live Channels</h3><p>Explore live TV channels covering sports, news, entertainment and kids content.</p></div>
-
 <div class="feature-card"><i class="fas fa-film" aria-hidden="true"></i><h3>VOD Library</h3><p>Browse a library of movies and TV shows, subject to your selected service plan.</p></div>
-
 <div class="feature-card"><i class="fas fa-bolt" aria-hidden="true"></i><h3>Streaming Quality</h3><p>Enjoy a viewing experience that depends on your internet connection and device.</p></div>
-
 <div class="feature-card"><i class="fas fa-headset" aria-hidden="true"></i><h3>Customer Support</h3><p>Contact our support team for assistance with setup and supported devices.</p></div>
-
 </div></section>
-
 <section class="social-proof" id="reviews"><h2 class="section-title">What Our Clients Say</h2>
-
 <div class="trust-stats"><div class="stat-item"><h3>Customer Care</h3><p>Support assistance</p></div><div class="stat-item"><h3>Multi-Device</h3><p>Device compatibility</p></div><div class="stat-item"><h3>Smarterproapp</h3><p>Our service brand</p></div></div>
-
 <div class="reviews-grid">
-
 <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"The setup process was straightforward and customer support was helpful."</p><div class="reviewer"><div class="reviewer-avatar">M</div><div class="reviewer-info"><h4>Customer</h4><span>Customer feedback</span></div></div></div>
-
 <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"I received assistance when setting up the service on my device."</p><div class="reviewer"><div class="reviewer-avatar">D</div><div class="reviewer-info"><h4>Customer</h4><span>Customer feedback</span></div></div></div>
-
 <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"The trial gave me an opportunity to check compatibility before subscribing."</p><div class="reviewer"><div class="reviewer-avatar">S</div><div class="reviewer-info"><h4>Customer</h4><span>Customer feedback</span></div></div></div>
-
 </div></section>
-
 <section class="pricing" id="pricing"><h2 class="section-title">Select Your Plan</h2><div class="pricing-grid">
-
 <div class="price-card"><div><h3>1 Month Pass</h3><div class="price">$20</div><ul class="price-features"><li><i class="fas fa-check"></i> Available content</li><li><i class="fas fa-check"></i> Supported devices</li><li><i class="fas fa-check"></i> 1 Device Connection</li><li><i class="fas fa-check"></i> Customer Support</li></ul></div><a href="https://wa.me/2349068276419?text=Hello%20Smarterproapp%2C%20I%20want%20the%201%20Month%20Plan%20($20)" class="btn-glow" target="_blank" rel="noopener noreferrer">Subscribe Now</a></div>
-
 <div class="price-card"><div><h3>3 Months Pass</h3><div class="price">$30</div><ul class="price-features"><li><i class="fas fa-check"></i> Available content</li><li><i class="fas fa-check"></i> Supported devices</li><li><i class="fas fa-check"></i> 1 Device Connection</li><li><i class="fas fa-check"></i> Customer Support</li></ul></div><a href="https://wa.me/2349068276419?text=Hello%20Smarterproapp%2C%20I%20want%20the%203%20Months%20Plan%20($30)" class="btn-glow" target="_blank" rel="noopener noreferrer">Subscribe Now</a></div>
-
 <div class="price-card popular"><div class="badge">BEST VALUE</div><div><h3>6 Months Pass</h3><div class="price">$40</div><ul class="price-features"><li><i class="fas fa-check"></i> Available content</li><li><i class="fas fa-check"></i> Supported devices</li><li><i class="fas fa-check"></i> 1 Device Connection</li><li><i class="fas fa-check"></i> Priority Support</li></ul></div><a href="https://wa.me/2349068276419?text=Hello%20Smarterproapp%2C%20I%20want%20the%206%20Months%20Plan%20($40)" class="btn-glow" target="_blank" rel="noopener noreferrer">Subscribe Now</a></div>
-
 <div class="price-card"><div><h3>12 Months Pass</h3><div class="price">$60</div><ul class="price-features"><li><i class="fas fa-check"></i> Available content</li><li><i class="fas fa-check"></i> Supported devices</li><li><i class="fas fa-check"></i> 1 Device Connection</li><li><i class="fas fa-check"></i> Customer Support</li></ul></div><a href="https://wa.me/2349068276419?text=Hello%20Smarterproapp%2C%20I%20want%20the%2012%20Months%20Plan%20($60)" class="btn-glow" target="_blank" rel="noopener noreferrer">Subscribe Now</a></div>
-
 </div></section>
-
 <section class="faq-section" id="faq"><h2 class="section-title">Frequently Asked Questions</h2><div class="faq-container">
-
 <div class="faq-item"><button class="faq-question" type="button">What devices are supported? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Compatibility may include Smart TVs, Amazon Fire TV devices, Android devices, Apple devices, Windows, Mac and supported TV boxes. Please confirm your device before ordering.</p></div></div>
-
 <div class="faq-item"><button class="faq-question" type="button">How fast will I receive my activation details? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>After your request and payment are confirmed, support will contact you with the next steps.</p></div></div>
-
 <div class="faq-item"><button class="faq-question" type="button">What internet speed do I need? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>A stable broadband connection is recommended. The speed required depends on stream quality and the number of devices using your connection.</p></div></div>
-
 <div class="faq-item"><button class="faq-question" type="button">Can I use one subscription on multiple devices? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Each listed standard plan is for one active device connection. Contact support to ask about other options.</p></div></div>
-
 </div></section>
-
 <section class="contact-section" id="contact"><h2 class="section-title">Contact Us</h2><div class="contact-container">
-
 <form id="contact-form" action="https://formspree.io/f/mqerldow" method="POST">
-
 <div class="form-grid">
-
 <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" required></div>
-
 <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required></div>
-
 <div class="form-group"><label for="country">Country</label><select id="country" name="country" required class="form-select">
-
 <option value="" data-code="" selected disabled>Select your country</option>
-
 <option value="Nigeria" data-code="+234">🇳🇬 Nigeria</option><option value="United States" data-code="+1">🇺🇸 United States</option><option value="United Kingdom" data-code="+44">🇬🇧 United Kingdom</option><option value="Canada" data-code="+1">🇨🇦 Canada</option><option value="Australia" data-code="+61">🇦🇺 Australia</option><option value="Germany" data-code="+49">🇩🇪 Germany</option><option value="France" data-code="+33">🇫🇷 France</option><option value="Spain" data-code="+34">🇪🇸 Spain</option><option value="South Africa" data-code="+27">🇿🇦 South Africa</option><option value="Ghana" data-code="+233">🇬🇭 Ghana</option><option value="Other" data-code="">Other</option>
-
 </select></div>
-
 <div class="form-group"><label for="phone">WhatsApp Phone Number</label><div class="phone-input-group"><input type="text" id="phone-code" name="country_code" class="form-select phone-code-select" placeholder="+234" readonly aria-label="Country calling code"><input type="tel" id="phone" name="phone" placeholder="Your phone number" autocomplete="tel-national" required></div></div>
-
 <div class="form-group full-width"><label for="message">Message</label><textarea id="message" name="message" placeholder="How can we help you?" required></textarea></div>
-
 <div class="form-group full-width"><button id="submit-button" type="submit" class="btn-glow">Send Message</button><p id="form-status" class="form-status" role="status" aria-live="polite"></p></div>
-
 </div>
-
 <input type="hidden" name="_subject" value="New message from Smarterproapp website">
-
 </form></div></section>
-
 </main>
-
 <a href="https://wa.me/2349068276419?text=Hello%20Smarterproapp%2C%20I%20have%20a%20question" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-
 <footer><p>&copy; 2026 Smarterproapp. All rights reserved.</p></footer>
-
 <script>
-
 document.querySelectorAll('.faq-question').forEach(button=>{button.addEventListener('click',()=>button.parentElement.classList.toggle('active'));});
-
 const countrySelect=document.getElementById('country');
-
 const phoneCodeInput=document.getElementById('phone-code');
-
 countrySelect.addEventListener('change',function(){phoneCodeInput.value=this.options[this.selectedIndex].dataset.code||'';});
 
-
 const contactForm=document.getElementById('contact-form');
-
 const statusBox=document.getElementById('form-status');
-
 const submitButton=document.getElementById('submit-button');
-
 contactForm.addEventListener('submit',async function(event){
-
   event.preventDefault();
-
   if(!contactForm.reportValidity()) return;
-
   statusBox.className='form-status';
-
   statusBox.textContent='';
-
   submitButton.disabled=true;
-
   submitButton.textContent='Sending...';
-
   const formData=new FormData(contactForm);
-
   formData.set('phone',((phoneCodeInput.value||'')+' '+document.getElementById('phone').value).trim());
-
   try{
-
     const response=await fetch(contactForm.action,{method:'POST',body:formData,headers:{'Accept':'application/json'}});
-
     if(response.ok){
-
       statusBox.textContent='Thank you! Your message has been sent successfully. We will get back to you soon.';
-
       statusBox.className='form-status success';
-
       contactForm.reset();
-
       phoneCodeInput.value='';
-
     }else{
-
       let result={};try{result=await response.json();}catch(e){}
-
       throw new Error(result.errors?.map(error=>error.message).join(', ')||'The form could not be submitted. Please try again.');
-
     }
-
   }catch(error){
-
     statusBox.textContent=error.message||'Unable to send your message right now. Please try again later.';
-
     statusBox.className='form-status error';
-
   }finally{
-
     submitButton.disabled=false;
-
     submitButton.textContent='Send Message';
-
   }
-
 });
-
 </script>
-
 </body>
-
-</html> 
+</html>
